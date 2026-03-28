@@ -1,0 +1,248 @@
+:root {
+	--park-charcoal: #243127;
+	--park-cream: #f7f4ec;
+	--park-green: #6c8f64;
+	--park-sage: #9eb48f;
+	--park-gold: #c7923b;
+	--park-terracotta: #bf6a3f;
+	--park-leaf: #4d7a46;
+	--park-text: #4a4a4a;
+	--park-border: rgba(36, 49, 39, 0.12);
+}
+
+body {
+	background: var(--park-cream);
+	color: var(--park-text);
+}
+
+body, input, select, textarea {
+	color: var(--park-text);
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: var(--park-leaf);
+	border-bottom-color: rgba(77, 122, 70, 0.25);
+}
+
+	a:hover {
+		color: var(--park-gold) !important;
+		border-bottom-color: transparent;
+	}
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(--park-charcoal);
+	letter-spacing: 0.05em;
+	font-weight: 700;
+}
+
+#header .logo .title {
+	color: var(--park-charcoal);
+	font-weight: 800;
+}
+
+#header nav ul li a {
+	background-color: rgba(108, 143, 100, 0.12);
+	border: 1px solid rgba(108, 143, 100, 0.2);
+	color: var(--park-charcoal) !important;
+}
+
+#menu {
+	background: #2d3d2f;
+}
+
+	#menu h2,
+	#menu ul > li > a {
+		color: #ffffff;
+	}
+
+.hero-block {
+	background: linear-gradient(135deg, rgba(108, 143, 100, 0.12), rgba(199, 146, 59, 0.09));
+	border: 1px solid var(--park-border);
+	border-radius: 1.25rem;
+	padding: 3.5rem 2.5rem;
+	margin-bottom: 3rem;
+	box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+}
+
+.hero-block h1 {
+	font-size: 3rem;
+	margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: var(--park-leaf);
+	margin-bottom: 1.25rem;
+}
+
+.content-section,
+.before-after-section {
+	background: #ffffff;
+	border: 1px solid var(--park-border);
+	border-radius: 1rem;
+	padding: 2.5rem;
+	margin: 2.25rem 0;
+	box-shadow: 0 10px 22px rgba(0, 0, 0, 0.05);
+}
+
+.content-section h2,
+.before-after-section h2 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	position: relative;
+	padding-bottom: 0.6rem;
+}
+
+.content-section h2:after,
+.before-after-section h2:after {
+	content: "";
+	display: block;
+	width: 80px;
+	height: 4px;
+	border-radius: 999px;
+	background: linear-gradient(90deg, var(--park-green), var(--park-gold));
+	margin-top: 0.6rem;
+}
+
+.content-section p,
+.before-after-section p {
+	font-size: 1.05rem;
+	line-height: 1.9;
+	margin-bottom: 0;
+}
+
+.project-tiles article .image img {
+	height: 280px;
+	object-fit: cover;
+	filter: saturate(1.05) contrast(1.02);
+}
+
+.tiles article.style1 > .image:before {
+	background-color: rgba(77, 122, 70, 0.78);
+}
+
+.tiles article.style2 > .image:before {
+	background-color: rgba(199, 146, 59, 0.78);
+}
+
+.tiles article.style3 > .image:before {
+	background-color: rgba(191, 106, 63, 0.78);
+}
+
+.tiles article.style4 > .image:before {
+	background-color: rgba(108, 143, 100, 0.78);
+}
+
+.tiles article.style5 > .image:before {
+	background-color: rgba(52, 94, 61, 0.78);
+}
+
+.tiles article.style6 > .image:before {
+	background-color: rgba(130, 111, 71, 0.78);
+}
+
+.tiles article h2 {
+	font-size: 1.35rem;
+	font-weight: 800;
+}
+
+.tiles article .content p {
+	font-size: 0.95rem;
+	line-height: 1.7;
+}
+
+.before-after-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+.comparison-card {
+	background: #fcfbf7;
+	border: 1px solid var(--park-border);
+	border-radius: 1rem;
+	padding: 1.25rem;
+	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
+}
+
+.comparison-card h3 {
+	margin-bottom: 1rem;
+	color: var(--park-charcoal);
+}
+
+.comparison-card img,
+.final-vision-image {
+	width: 100%;
+	display: block;
+	border-radius: 0.85rem;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.final-vision-image {
+	margin-top: 1.5rem;
+}
+
+#footer {
+	background: #1f2b21;
+	color: rgba(255, 255, 255, 0.85);
+}
+
+#footer h2,
+#footer strong,
+#footer a {
+	color: #ffffff;
+}
+
+#footer .icons {
+	list-style: none;
+	padding-left: 0;
+}
+
+#footer .icons li {
+	margin-bottom: 0.35rem;
+}
+
+#footer .icons li a {
+	border-bottom: none;
+	color: rgba(255, 255, 255, 0.88);
+}
+
+	#footer .icons li a:hover {
+		color: #f2c15f !important;
+	}
+
+#footer .copyright {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (max-width: 980px) {
+	.hero-block {
+		padding: 2.5rem 1.5rem;
+	}
+
+	.hero-block h1 {
+		font-size: 2.3rem;
+	}
+
+	.before-after-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	.content-section,
+	.before-after-section {
+		padding: 1.5rem;
+	}
+
+	.hero-block h1 {
+		font-size: 2rem;
+	}
+
+	.project-tiles article .image img {
+		height: 220px;
+	}
+}
