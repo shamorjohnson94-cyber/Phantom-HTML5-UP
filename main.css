@@ -228,7 +228,11 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	.before-after-grid {
-		grid-template-columns: 1fr;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: 2rem;
+	margin-top: 2rem;
+}
 	}
 }
 
