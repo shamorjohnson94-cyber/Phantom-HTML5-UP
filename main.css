@@ -10,6 +10,10 @@
 	--park-border: rgba(36, 49, 39, 0.12);
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background: var(--park-cream);
 	color: var(--park-text);
@@ -25,10 +29,10 @@ a {
 	border-bottom-color: rgba(77, 122, 70, 0.25);
 }
 
-	a:hover {
-		color: var(--park-gold) !important;
-		border-bottom-color: transparent;
-	}
+a:hover {
+	color: var(--park-gold) !important;
+	border-bottom-color: transparent;
+}
 
 h1, h2, h3, h4, h5, h6 {
 	color: var(--park-charcoal);
@@ -51,10 +55,10 @@ h1, h2, h3, h4, h5, h6 {
 	background: #2d3d2f;
 }
 
-	#menu h2,
-	#menu ul > li > a {
-		color: #ffffff;
-	}
+#menu h2,
+#menu ul > li > a {
+	color: #ffffff;
+}
 
 .hero-block {
 	background: linear-gradient(135deg, rgba(108, 143, 100, 0.12), rgba(199, 146, 59, 0.09));
@@ -155,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .before-after-grid {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 	gap: 2rem;
 	margin-top: 2rem;
 }
@@ -169,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .comparison-card h3 {
-	margin-bottom: 1rem;
+	margin: 0 0 1rem 0;
 	color: var(--park-charcoal);
 }
 
@@ -179,10 +183,12 @@ h1, h2, h3, h4, h5, h6 {
 	display: block;
 	border-radius: 0.85rem;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+	margin-bottom: 1.25rem;
 }
 
 .final-vision-image {
 	margin-top: 1.5rem;
+	margin-bottom: 0;
 }
 
 #footer {
@@ -196,23 +202,24 @@ h1, h2, h3, h4, h5, h6 {
 	color: #ffffff;
 }
 
-#footer .icons {
+.footer-links {
 	list-style: none;
 	padding-left: 0;
+	margin: 0;
 }
 
-#footer .icons li {
-	margin-bottom: 0.35rem;
+.footer-links li {
+	margin-bottom: 0.45rem;
 }
 
-#footer .icons li a {
+.footer-links li a {
 	border-bottom: none;
 	color: rgba(255, 255, 255, 0.88);
 }
 
-	#footer .icons li a:hover {
-		color: #f2c15f !important;
-	}
+.footer-links li a:hover {
+	color: #f2c15f !important;
+}
 
 #footer .copyright {
 	color: rgba(255, 255, 255, 0.7);
@@ -225,14 +232,6 @@ h1, h2, h3, h4, h5, h6 {
 
 	.hero-block h1 {
 		font-size: 2.3rem;
-	}
-
-	.before-after-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-	gap: 2rem;
-	margin-top: 2rem;
-}
 	}
 }
 
